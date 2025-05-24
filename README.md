@@ -1,3 +1,15 @@
+# airflow-dbt-pipeline
+A hands-on data engineering portfolio project demonstrating an end-to-end data pipeline using Apache Airflow, DBT Core, and PostgreSQL, all orchestrated with Docker Compose.
+
+This project showcases ETL/ELT practices, including raw and staging schemas, automated data loading, transformation, and summary modeling.
+
+# Project Overview
+This repository contains a complete, containerized data pipeline for demonstration and learning purposes:
+
+- Apache Airflow orchestrates the workflow.
+- DBT Core (run in a Python virtual environment) performs SQL-based data transformations.
+- PostgreSQL serves as the data warehouse, with raw_data and staging schemas.
+- CSV files are loaded into staging tables, then transformed and upserted into the raw data tables, and finally summarized.
 
 ---
 
