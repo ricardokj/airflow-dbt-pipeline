@@ -1,0 +1,27 @@
+
+version: 2
+
+models:
+  - name: flights_summary
+    description: "Summary of flights by carrier, year, and month, including total flights and average delays."
+    columns:
+      - name: carrier
+        description: "Two-letter carrier code"
+        tests:
+          - not_null
+      - name: year
+        description: "Year of the flight"
+        tests:
+          - not_null
+      - name: month
+        description: "Month of the flight"
+        tests:
+          - not_null
+      - name: total_flights
+        description: "Total number of flights"
+        tests:
+          - not_null
+      - name: avg_dep_delay
+        description: "Average departure delay (minutes)"
+      - name: avg_arr_delay
+        description: "Average arrival delay (minutes)"
