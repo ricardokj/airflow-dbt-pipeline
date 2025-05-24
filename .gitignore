@@ -9,4 +9,3 @@ solutions
 airflow/logs
 dbt.log
 .user.yml
-.env
